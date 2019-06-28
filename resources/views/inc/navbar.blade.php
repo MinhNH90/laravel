@@ -14,6 +14,12 @@
                 <li class="nav-item {{Request::is('messages') ? 'active' : ''}}">
                     <a class="nav-link" href="/messages">Messages</a>
                 </li>
+                <li class="nav-item {{Request::is('register') ? 'active' : ''}}">
+                    <a class="nav-link" href="/register">Register</a>
+                </li>
+                <li class="nav-item {{Request::is('people') ? 'active' : ''}}">
+                    <a class="nav-link" href="/people">People</a>
+                </li>
             </ul>
         </div>
     </div>

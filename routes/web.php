@@ -17,6 +17,12 @@ Route::get('/about', 'PagesController@getAbout');
 
 Route::get('/contact', 'PagesController@getContact');
 
+Route::get('/register', 'PagesController@getRegister');
+
+Route::post('/register/submit', 'PeopleController@submit');
+
+Route::get('/people', 'PeopleController@getPeople');
+
 Route::get('/messages', 'MessagesController@getMessages');
 
 Route::post('/contact/submit', 'MessagesController@submit');
