@@ -23,6 +23,8 @@ Route::post('/register/submit', 'PeopleController@submit');
 
 Route::get('/people', 'PeopleController@getPeople');
 
+Route::get('/people/{id}', 'PeopleController@getPeopleDetails');
+
 Route::get('/messages', 'MessagesController@getMessages');
 
 Route::post('/contact/submit', 'MessagesController@submit');

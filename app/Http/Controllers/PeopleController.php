@@ -33,4 +33,9 @@ class PeopleController extends Controller
 
         return view('people')->with('people', $people);
     }
+
+    public function getPeopleDetails($id) {
+        $people = People::find($id);
+        return view('infor')->with('people', $people);
+    }
 }

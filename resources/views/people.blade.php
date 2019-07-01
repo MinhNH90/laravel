@@ -5,7 +5,7 @@
     @if(count($people) > 0)
         @foreach($people as $item)
             <ul class="list-group mb-4">
-                <li class="list-group-item">Name : {{$item->name}}</li>
+                <li class="list-group-item">Name : <a href="{{url('/people')}}/<?php echo $item->id; ?>">{{$item->name}}</a></li>
                 <li class="list-group-item">Sex : {{$item->sex}}</li>
                 <li class="list-group-item">Job : {{$item->job}}</li>
                 <li class="list-group-item">Address : {{$item->address}}</li>
